@@ -1,0 +1,27 @@
+[package]
+name = "bronchip"
+authors = ["Daniel Mangum <georgedanielmangum@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+documentation = "https://github.com/bronchip/bronchip"
+homepage = "https://github.com/bronchip/bronchip"
+repository = "http://github.com/bronchip/bronchip"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.84"
+js-sys = "0.3.61"
+wasm-bindgen-futures = "0.4.34"
+serde = { version = "1.0", features = ["derive"] }
+serde-wasm-bindgen = "0.4"
+
+[dependencies.web-sys]
+version = "0.3.5"
+features = [
+  'ReadableStream',
+  'ReadableStreamDefaultController',
+  'ReadableStreamDefaultReader',
+]
