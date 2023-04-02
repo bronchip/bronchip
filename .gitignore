@@ -1,0 +1,9 @@
+# Ignore assorted build directories.
+**/node_modules
+**/pkg
+**/target
+**/dist
+
+# Ignore top-level Cargo config, which may be required locally for rust-analyzer
+# to function properly.
+/.cargo
