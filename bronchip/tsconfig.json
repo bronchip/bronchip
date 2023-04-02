@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        // NOTE(hasheddan): must use esnext to allow for dynamic import.
+        "module": "esnext",
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true,
+        "lib": [
+            "dom"
+        ],
+        "moduleResolution": "node"
+    }
+}
